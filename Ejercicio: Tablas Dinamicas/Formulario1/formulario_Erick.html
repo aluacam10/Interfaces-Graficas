@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hola HTML</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <form id="formulario">
+        Número de tarjeta: <input name="numerotarjeta" id="numerotarjeta"><br>
+        Fecha de vencimiento: <input type="date" name="fechavencimiento" id="fechavencimiento"><br>
+
+        Tipo:
+        <input type="radio" name="tipo" value="Visa"> Visa
+        <input type="radio" name="tipo" value="MasterCard"> MasterCard
+        <input type="radio" name="tipo" value="American Express"> American Express<br>
+
+        Nombre del titular: <input type="text" name="titular" id="titular"><br>
+        CVC: <input type="number" name="cvc" id="cvc"><br>
+        Contraseña: <input type="password" name="contrasenia" id="contrasenia"><br>
+
+        <input type="checkbox" id="confirmacion"> Los datos introducidos son correctos<br>
+
+        Talla:
+        <select name="talla" id="talla">
+            <option>XS</option>
+            <option>S</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XLL</option>
+        </select><br>
+
+        Comentarios:
+        <textarea name="comentarios" id="comentarios"></textarea><br>
+
+        <input type="submit" value="Guardar">
+        <button type="button" onclick="limpiarFormulario()">Cancelar</button>
+    </form>
+
+    <h2>Datos ingresados:</h2>
+    <table border="1" id="tablaDatos" style="display:none;">
+        <thead>
+            <tr>
+                <th>Número de tarjeta</th>
+                <th>Fecha</th>
+                <th>Tipo</th>
+                <th>Titular</th>
+                <th>CVC</th>
+                <th>Contraseña</th>
+                <th>Talla</th>
+                <th>Comentarios</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</body>
+</html>
