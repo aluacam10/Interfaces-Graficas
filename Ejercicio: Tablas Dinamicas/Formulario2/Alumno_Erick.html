@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Persona</title>
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+    <form id="formRegistro">
+        <label>Nombre: <input type="text" name="nombre" required></label><br>
+        <label>Apellido: <input type="text" name="apellido" required></label><br>
+
+        <label>Sexo:</label><br>
+        <input type="radio" name="sexo" value="h" required> Hombre
+        <input type="radio" name="sexo" value="m"> Mujer
+        <input type="radio" name="sexo" value="o"> Otro <br>
+
+        <label>Fecha de nacimiento: <input type="date" name="fh_nac" required></label><br>
+
+        <label>Rol:</label><br>
+        <input type="radio" name="id_rol" value="1" required> Alumno
+        <input type="radio" name="id_rol" value="2"> Profesor
+        <input type="radio" name="id_rol" value="3"> Administrativo
+        <input type="radio" name="id_rol" value="4"> Otro <br>
+
+        <input type="submit" value="Guardar">
+        <button type="reset">Cancelar</button>
+    </form>
+
+    <h2>Datos ingresados</h2>
+    <table id="tablaDatos" style="display: none;">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Sexo</th>
+                <th>Fecha de nacimiento</th>
+                <th>Rol</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="registro.js"></script>
+</body>
+</html>
